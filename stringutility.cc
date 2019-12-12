@@ -1,5 +1,4 @@
 #include "stringutility.h"
-#include <algorithm>
 
 bool StringUtility::EndsWith(const std::string& source, const std::string& ending) {
     if (source.size() < ending.size())
