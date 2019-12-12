@@ -1,0 +1,73 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# macOS
+.DS_Store
+
+# CMake
+CMakeFiles
+CMakeScripts
+CMakeCache.txt
+cmake_install.cmake
+/Makefile
+/compile_commands.json
+
+# Xcode
+*.xcodeproj
+Debug-iphoneos
+Release-iphoneos
+Debug-iphonesimulator
+Release-iphonesimulator
+
+# Visual Studio
+*.dir
+*.vcxproj
+*.filters
+*.sln
+*.user
+.vs
+x64
+Debug
+Release
+
+# Visual Studio Code
+.vscode
+
+# CtrlP
+.ctrlp
+
+# Ctags
+tags
+
+# Targets
+/smapstool
