@@ -1,4 +1,5 @@
 #include "stringutility.h"
+#include <utility>
 
 bool StringUtility::EndsWith(const std::string& source, const std::string& ending) {
     if (source.size() < ending.size())
@@ -15,11 +16,9 @@ auto StringUtility::Split(const std::string& source, char separator) -> std::sha
     for (auto ch : source)
         if (ch != separator)
             element.push_back(ch);
-        else if (!element.empty()) {
-            elements->push_back(element);
-            element.clear();
-        }
+        else if (!element.empty())
+            elements->push_back(std::move(element));
     if (!element.empty())
-        elements->push_back(element);
+        elements->push_back(std::move(element));
     return elements;
 }
