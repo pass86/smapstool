@@ -11,7 +11,11 @@ int main(int argc, char* argv[]) {
     if (!tool.LoadFile(argv[2]))
         return -1;
     std::string command(argv[1]);
-    if (command == "code")
+    if (command == "code") {
         tool.PrintCodeMemory();
+     } else {
+        std::cout << "Unknown command" << std::endl;
+        return -1;
+    }
     return 0;
 }
